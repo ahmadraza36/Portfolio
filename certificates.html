@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Ahmad's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <h2 style="text-align: center; margin-top: 30px; font-size: 40px; color: rgb(187, 133, 237);">My Certifications</h2>
+  <main class="certificates">
+    <div class="card" onclick="openLightbox('HTML.png')">
+      <img src="HTML.png" alt="HTML Certificate">
+      <p>HTML Certificate</p>
+    </div>
+    <div class="card" onclick="openLightbox('CSS.png')">
+      <img src="CSS.png" alt="CSS Certificate">
+      <p>CSS Certificate</p>
+    </div>
+    <div class="card" onclick="openLightbox('Java Certificate.jpg')">
+      <img src="Java Certificate.jpg" alt="Java Certificate">
+      <p>Java Certificate</p>
+    </div>
+    <div class="card" onclick="openLightbox('WDes.png')">
+      <img src="WDes.png" alt="Responsive Web Design Certificate">
+      <p>Responsive Web Design Certificate</p>
+    </div>
+  </main>
+   <footer>
+    <div class="footer">
+       &copy; 2025|| Made with <span style="color: red;">&#10084;</span>.
+    </div>
+    </div>
+  </footer>
+  </div>
+    
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+  <script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+</body>
+
+</html>
